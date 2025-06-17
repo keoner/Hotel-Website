@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/E_style.css">
+    <link href="styles/Global.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="images/K_logo.png" />
+    <title>Facility Booking | Azure Palms Retreat </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gilda+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="E_overlay">
+        <br><br><br>
+        <div class="E_formcontainer">
+            <p class="E_formtitle">Facility Booking Form</p>
+            <form method="get" action="E_book.html">
+                <div class="E_formbox">
+                    <label for="fullname">Name of Guest</label>
+                    <input type="text" id="E_fullname" name="fullname" placeholder="Full Legal Name" required>
+                </div>
+                <div class="E_formbox">
+                    <label for="gender">Gender</label>
+                    <select id="E_gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="E_formbox">
+                    <label for="contactinfo">Contact Info</label>
+                    <input type="email" id="E_email" placeholder="Email" name="Email" title="Your current email" required/>
+                    <input type="contact" id="E_pnumber" placeholder="Phone Number" name="Phone Number" title="8 digits phone number" pattern="\d{8}" required\>
+                </div>
+                <div class="E_formbox">
+                    <label for="Facility">Facility</label> 
+                    <select id="E_FacilityType" name="facility" required>
+                        <option value="bar">The Velvet Underground Bar</option>
+                        <option value="omakase">Hachi Omakase Dining</option>
+                        <option value="buffet">Le Festin Royal</option>
+                        <option value="spa">Solstice Spa</option>
+                        <option value="ballroom">Lumina Ball</option>
+                        <option value="execlounge">Executive Lounge</option>
+                        <option value="swimpool">Azure Crest</option>
+                        <option value="listen">Listening Station</option>
+                        <option value="cinema">Cinema</option>
+                        <option value="game">Game Room</option>
+                    </select>
+                    <label for="date">Select Date</label>
+                    <input type="date" id="E_datepick" class="date" name="dateofbooking" required>
+                    <div class="E_timeselect">
+                        <label for="time">Select Time</label>
+                        <input type="time" id="E_timepick" name="start"required>
+                        <p>→</p>
+                        <input type="time" id="E_timepick" name="end" required>
+                    </div>
+                    <div class="E_messagebox">
+                        <label for="message">Message (optional)</label>
+                        <input type="text" id="E_message" name="message">
+                    </div>
+                </div>
+                <div class="E_formbox">
+                    <input type="submit" value="Submit">
+                </div>
+                <div class="E_backbtn">
+                    <a href="E_book.html" class="E_backtext">Back</a>
+                </div>
+            </form>
+        </div>
+        <br><br><br>
+    </div>
+
+    
+</body>
+</html>

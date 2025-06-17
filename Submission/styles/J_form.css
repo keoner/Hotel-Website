@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.j_main_bg {
+    background: url("../images/j_5.jpg") center/cover no-repeat;
+    max-width: 1280px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.j_form {
+    width: 650px;
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.j_form-text {
+    text-align: center;
+    margin: 0 0 40px 0;
+
+}
+
+.j_form-text h1 {
+    color: #011536;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.j_form-text p {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.j_main-form div {
+    margin: 10px 10px;
+    width: 300px;
+    display: inline-block;
+}
+
+.j_main-form div input {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: none;
+    height: 50px;
+    font-size: 20px;
+    border-color: transparent;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #aaa;
+}
+
+.j_main-form div select {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: none;
+    font-size: 20px;
+    color: gray;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 50px;
+    border-color: transparent;
+    background-color: #aaa;
+}
+
+::-webkit-datetime-edit-text {
+    color: gray;
+    padding: 0 0.3em;
+}
+
+::-webkit-datetime-edit-month-field {
+    color: gray;
+}
+
+::-webkit-datetime-edit-day-field {
+    color: gray;
+}
+
+::-webkit-datetime-edit-year-field {
+    color: gray;
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+option {
+    color: gray;
+}
+
+.j_main-form div span {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 25px;
+}
+
+#j_submit {
+    width: 100%;
+    text-align: center;
+}
+
+#j_submit input {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    background-color: #011536 !important;
+    color: rgb(255, 255, 255) !important;
+    transition: all .3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+#j_submit input:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    background-color: #4e6a78!important;
+    color: #011536!important;
+
+}
+
+#j_submit input:active {
+    font-size: 19px;
+    background-color: rgb(46, 20, 5) !important;
+    color: #011536 !important;
+}
+
+.j_backbtn {
+    font-size: 11.5px;
+    cursor: pointer;
+    color: #011536 ;
+      position: relative;
+      transition: color 0.2s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.j_backbtn::after {
+    content: "";
+	width: 0;
+	height: 3px;
+
+	background-color: #4e6a78;
+	transition: width 0.2s ease;
+
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+}
+
+
+.j_backbtn:hover {
+    color: #4e6a78;
+}
+
+.j_backbtn:hover::after {
+    width: 100%;
+}
+
+
+@media screen and (max-width:700px) {
+    .j_main-form {
+        text-align: center;
+    }
+}

@@ -1,0 +1,775 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Preloader! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #011536;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's above other content */
+  opacity: 1;
+  transition: opacity 2s ease-out; /* Fade out transition */
+}
+
+#loader {
+  border: 5px solid #fff; /* Loader border color */
+  border-top: 5px solid transparent; /* Transparent top border creates animation effect */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+
+  opacity: 1;
+  transition: opacity 2s ease-out; /* Fade out transition */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#preloader.hidden {
+  opacity: 0;
+}
+
+#content {
+  visibility: hidden;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Hero (desktop) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.K_container {
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.K_video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.K_container h1 {
+  padding-top: 60vh;
+  padding-left: 5vw;
+  font-size: 4em;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  color: #fff;
+}
+
+.K_container h3 {
+  padding-left: 5vw;
+  padding-bottom: 1.5em;
+  font-size: 2.5em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "Gilda Display";
+  font-style: italic;
+  color: #fff;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Hero (mobile) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.K_container {
+  height: 85vh;
+}
+
+@media (max-width: 767px) {
+  .K_container h1 {
+    padding-top: 40vh;
+    font-size: 3em;
+  }
+
+  .K_container h3 {
+    font-size: 2em;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ About section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.K_about-section {
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 210px;
+  margin-bottom: 210px;
+}
+
+
+.K_cbtn {
+  float: right;
+  margin-top: 2.5vh;
+  margin-right: 3.75vw;
+  padding: 1vh 2vw;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  border: 3px solid #000;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.2rem;
+  background-color: var(--bg);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.K_cbtn:hover {
+  color: #fff;
+}
+.K_cbtn::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.K_cbtn:hover::before {
+  transform-origin: right;
+  transition: transform 0.5s ease;
+  transform: scaleX(0);
+}
+
+.K_row {
+  width: 80%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px 30px;
+}
+
+.K_row .K_left {
+  overflow: hidden;
+}
+
+.K_row .K_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.K_about-p {
+  font-family: Lato;
+  font-size: 1.205em;
+}
+
+@media (max-width: 767px) {
+  .K_row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Scrolling Element ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#K_scrooolling {
+  background-color: #4e6a78;
+  padding: 15vh 0;
+}
+
+#K_scrolling {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.K_media-scroller {
+  display: grid;
+  gap: 1.2vw;
+  grid-auto-flow: column;
+  grid-auto-columns: 23%;
+  overflow-x: auto;
+}
+
+.K_media-scroller::-webkit-scrollbar {
+  height: 1.3vh;
+}
+
+.K_media-scroller::-webkit-scrollbar-thumb {
+  background: #2c4458;
+  border-radius: 10px;
+}
+
+.K_media-scroller::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #7d96a6;
+}
+
+.K_media-element{
+  overflow: hidden;
+}
+
+.K_media-element>img {
+  width: 100%;
+  height: 26vh;
+  object-fit: cover;
+}
+
+.K_media-text {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+/* Scrolling Element (Responsive) */
+
+@media screen and (max-width: 768px) {
+  .K_media-scroller {
+    grid-auto-columns: 45%;
+    /* Adjust for smaller screens */
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ L Program ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.K_Lprogram {
+  margin: 15vh 10vh 0 10vh;
+  text-align: center;
+}
+
+/* Lprogram (Responsive) */
+.K_Lheader {
+  font-size: 1.3em;
+}
+
+.K_Lcontent {
+  font-size: 1em;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Tab styling ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.K_tab {
+  border: 2px solid #90a8b9;
+  background-color: #7c94a6;
+}
+
+.K_scrollcolour {
+  background-color: #4e6a78;
+}
+
+.K_tablinks {
+  letter-spacing: 2px;
+}
+
+.K_tab button {
+  background-color: inherit;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.K_tab button:hover {
+  background-color: #ddd;
+}
+
+.K_tab button.K_active {
+  background-color: #ccc;
+}
+
+.K_tabcontent {
+  display: none;
+  padding: 6px 12px 40px 12px;
+  border-top: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Mid grid ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.K_blueback {
+  background-color: #011536;
+}
+
+#K_midgrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.K_midgridLeft {
+  flex: 1;
+  padding: 80px 40px;
+}
+
+.K_midgridRight {
+  flex: 1;
+  padding: 120px 40px;
+}
+
+.K_grid-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+}
+
+
+.K_grid-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.K_gridhead {
+  font-size: clamp(3em, 3.8em, 4em);
+  font-family: "Cormorant Garamond";
+  text-align: center;
+  font-size: 3.8em;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 4vh;
+}
+
+.K_gridtext {
+  font-size: 1.3em;
+  font-family: "Lato";
+  color: #fff;
+  line-height: 1.8;
+}
+
+@media(max-width: 1200px) {
+  #K_midgrid {
+    display: initial;
+  }
+
+  .K_midgridLeft {
+    padding: 20px;
+  }
+
+  .K_midgridRight {
+    padding: 10px 20px;
+  }
+
+  .K_grid-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+  }
+
+  .K_gridtext {
+    font-size: 0.8em;
+
+  }
+
+  .K_new-hidden {
+    display: none !important;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Table styling ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#K_facil {
+  background-color: #4e6a78;
+  padding: 15vh 0;
+}
+
+.K_page-header h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.K_product-landscape img {
+  width: 350px;
+  height: 210px;
+  object-fit: cover;
+}
+
+@media (max-width: 404px){
+  .K_product-landscape img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+  }
+}
+
+.K_product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 100px;
+}
+
+table {
+  margin: 40px 20px;
+  width: 350px;
+  
+  display: flex;
+}
+
+.K_left-table {
+  display: block;
+  float: left;
+}
+
+.K_middle-table {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.K_right-table {
+  display: block;
+  float: right;
+}
+
+.K_table-btn {
+  float: right;
+  margin: 8.5px 0 8.5px 0;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 1.6%;
+  color: #fff ;
+	position: relative;
+	transition: color 0.2s ease;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding-top: 3%;
+}
+
+.K_table-btn::after {
+  content: "";
+	width: 0;
+	height: 3px;
+	background-color: #aaa ;
+	transition: width 0.2s ease;
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+}
+
+
+.K_table-btn:hover {
+  color:#aaa ;
+}
+.K_table-btn:hover::after {
+  width: 100%;
+}
+.K_facil-desc h3 {
+  float: left;
+  font-family: Lato;
+  margin: 8.5px;
+  color: white;
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Before Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.K_end-image-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.K_end-image-wrapper {
+  position: relative;
+}
+
+.K_end-image-wrapper img {
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.K_end-image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  padding: 5px;
+}
+
+.K_end-image-text h1 {
+  font-family:"Cormorant Garamond";
+}
+
+.K_end-image-text p {
+  font-family: "Lato";
+}
+
+.K_end-image-text h3{
+  font-family: "Gilda Display";
+}
+
+@media (max-width: 767px) {
+  .K_end-image-container {
+    flex-wrap: wrap;
+  }
+
+  .K_end-image-wrapper img {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SVG graphics ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.K_layer2 {
+  background-image: url("../images/K_facil-layer.svg");
+}
+
+.K_layer3 {
+  background-image: url("../images/K_end-layer.svg");
+}
+
+.K_layer4 {
+  background-image: url("../images/K_midstack.svg");
+}
+
+.K_layer5 {
+  background-image: url("../images/K_midstack-end.svg");
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Page 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Banner ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.K_banner {
+  position: relative;
+  margin-bottom: 3vh;
+}
+
+.K_banner img {
+  aspect-ratio: 8;
+  object-fit: cover;
+  width: 100vw;
+}
+
+.K_banner p {
+  position: absolute;
+  font-family: "Gilda Display";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5.5vw;
+  color: white;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Forms ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.K_wrapperrr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin-top: 2vh;
+  margin-bottom: 7vh;
+}
+
+.K_forms-container1>a {
+  display: inline-block;
+  /* Display anchors inline without wrapping */
+  width: 48.8%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #4e6a78;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+  opacity: 0.6;
+}
+
+.K_form-selected {
+  background-color: #011536 !important;
+  color: white !important;
+  opacity: 1 !important;
+}
+
+.K_user-input-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+}
+
+.K_user-input-box:hover {
+  opacity: 0.9;
+}
+
+.K_user-input-box .K_last2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
+  border: 1px solid grey;
+  border-radius: 7px;
+  height: 40px;
+}
+
+.K_special {
+  width: 97.5% !important;
+  padding-bottom: 15px !important;
+}
+
+.K_flexitem {
+  margin-right: 1vw;
+  display: flex;
+  align-items: center;
+}
+
+.K_flexitem>input {
+  margin-right: 0.2vw;
+}
+
+.K_flexgroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.K_user-input-box>label {
+  color: black;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.K_notspecial {
+  color: black;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.K_user-input-box .K_halfform {
+  height: 40px;
+  width: 95%;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 0 10px;
+}
+
+.K_user-input-box .K_fullform {
+  height: 40px;
+  width: 100%;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 0 10px;
+}
+
+.K_rangeslide {
+  appearance: none;
+  border: none !important;
+}
+
+.K_user-input-box input[type="range"]::-webkit-slider-runnable-track {
+  background: #aaa;
+  border-radius: 25px;
+}
+
+.K_user-input-box .K_fullform::-webkit-slider-thumb {
+  appearance: none;
+  width: 40px;
+  height: 12px;
+  border-radius: 24px;
+  background-color: #011536;
+  cursor: pointer;
+}
+
+.K_user-input-box input[type=submit] {
+  border: 1px solid green;
+  /* Default border color */
+}
+
+
+.K_user-input-box input[type=submit]:hover {
+  background-color: green;
+  /* Change background color on hover */
+  color: white;
+  /* Change text color on hover */
+}
+
+.K_user-input-box input[type=reset] {
+  border: 1px solid red;
+  /* Default border color */
+}
+
+.K_user-input-box input[type=reset]:hover {
+  background-color: red;
+  /* Change background color on hover */
+  color: white;
+  /* Change text color on hover */
+}
+
+.K_contactLeft{
+  float:left;
+  width:96.5%;
+  margin-left:1%;
+}
+
+.K_contactRight{
+  float:right;
+  width:2%;
+}
+
+@media(max-width: 600px) {
+  .K_forms-container {
+    min-width: 280px;
+  }
+
+  .K_user-input-box {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+
+  .K_user-input-box:nth-child(2n) {
+    justify-content: space-between;
+  }
+}
+
+.K_locationC {
+  text-align: center;
+  float: none;
+}
+
+.K_locationText {
+  width: 100%;
+  font-size: clamp(0.8em, 1em, 1.2em);
+}
+
+.K_locationText h1 {
+  font-size: 4em;
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+}
+
+.K_locationText p {
+  font-size: 1.2em;
+  font-family: "Lato";
+}
+
+.K_locationMap {
+  width: 100%;
+  height: 75vh;
+}

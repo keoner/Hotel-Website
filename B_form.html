@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Restaurant Booking | Azure Palms Retreat</title>
+        <link rel="icon" type="image/x-icon" href="images/K_logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/B_style.css">
+        <link rel="stylesheet" href="styles/Global.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar">
+              <label class="K_logo"><img src="images/K_logo.png">A.P.R</label>
+              <div class="navbar-toggle" id="navbarToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <ul class="navbar-menu" id="menuItems">
+                <li><a href="K_Landing.html">Home</a></li>
+                <li><a href="EV_roomInfo.html">Rooms</a></li>
+                <li><a href="B_content.html">Dining</a></li>
+                <li><a href="J_activity.html">Activities</a></li>
+                <li><a href="E_book.html">Facilities</a></li>
+                <li><a href="K_contact.html">Contact Us</a></li>
+              </ul>
+            </nav>
+          </header>
+        </header>
+        
+        <section class = "bannerBima">
+            <h2>BOOK YOUR TABLE NOW</h2>
+            <div class = "cardBima-container">
+                <div class="cardBima-img">
+                    <img href="images/B_card-img.jpg"> 
+                </div>
+
+                <div class = "cardBima-content">
+                    <h3>Reservation</h3>
+                    <form method="get" action="B_content.html">
+                        <div class = "formBima-row">
+                            <select name = "day" required>
+                                <option value = "day-select">Select Day</option>
+                                <option value = "sunday">Sunday</option>
+                                <option value = "monday">Monday</option>
+                                <option value = "tuesday">Tuesday</option>
+                                <option value = "wednesday">Wednesday</option>
+                                <option value = "thursday">Thursday</option>
+                                <option value = "friday">Friday</option>
+                                <option value = "saturday">Saturday</option>
+                            </select>
+
+                            <select name = "hours" required>
+                                <option value = "hour-select">Select Hour</option>
+                                <option value = "10">10: 00</option>
+                                <option value = "10">12: 00</option>
+                                <option value = "10">14: 00</option>
+                                <option value = "10">16: 00</option>
+                                <option value = "10">18: 00</option>
+                                <option value = "10">20: 00</option>
+                                <option value = "10">22: 00</option>
+                            </select>
+                        </div>
+
+                        <div class = "formBima-row">
+                            <input type = "text" placeholder="Full Name" required>
+                            <input type = "tel" placeholder="Phone Number" pattern="[0-9]{8}" required>
+                            
+                        </div>
+
+                        <div class="formBima-row">
+                            <select name="Dining option" required>
+                                <option value = "Dining option select">Dining option select</option>
+                                <option value = "10">Velvet Lounge</option>
+                                <option value = "10">Azure Sky Bar</option>
+                                <option value = "10">Cafe Delights</option>
+                                <option value = "10">Java Junction</option>
+                                <option value = "10">New Bistro</option>
+                                <option value = "10">InterCuisine</option>
+                                <option value = "10">Luka's Trattoria</option>
+                                <option value = "10">Delights Tavern</option>
+                            </select>
+                            <input type = "number" placeholder="Pax" min = "1" required>
+                        </div>
+                        <div class = "formBima-row">
+                            <input type = "submit" value = "BOOK TABLE">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        
+        
+    </body>
+</html>

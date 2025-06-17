@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="hotel room reservation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="1800">
+    <link rel="icon" type="image/x-icon" href="images/K_logo.png" />
+    <link rel="stylesheet" type="text/css" href="styles/E_style.css">
+    <link href="styles/Global.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gilda+Display&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title> Facilities | Azure Palms Retreat </title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+          <label class="K_logo"><img src="images/K_logo.png">A.P.R</label>
+          <div class="navbar-toggle" id="navbarToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="navbar-menu" id="menuItems">
+            <li><a href="K_Landing.html">Home</a></li>
+            <li><a href="EV_roomInfo.html">Rooms</a></li>
+            <li><a href="B_content.html">Dining</a></li>
+            <li><a href="J_activity.html">Activities</a></li>
+            <li><a href="E_book.html">Facilities</a></li>
+            <li><a href="K_contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+    </header>
+    <div class="E_hero-image">
+        <div class="E_container">
+            <div class="E_hero-content">
+                <h1>Azure Palms Retreat</h1>
+                <h3>Facilities & Others</h3>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <fieldset class="E_restobox">
+        <h1 class="E_card-header"> Fine Dining</h1>
+        <h3 class="E_line">￣￣￣￣￣￣￣￣￣￣￣￣￣￣</h3>
+        <div class="E_card-container">
+            <div class="E_card">
+                <img src="images/E_bar.jpg">
+                <div class="E_card-content"></div>
+                <h3>Velvet Lounge</h3>
+                <p>Immerse yourself in an atmosphere of sophistication, sip on expertly crafted cocktails, and unwind in
+                    the epitome of luxury.</p>
+                <a href="B_content.html" class="E_btn">More Info ⓘ</a>
+            </div>
+            <div class="E_card">
+                <img src="images/E_buffets.jpeg">
+                <div class="E_card-content"></div>
+                <h3>Le Festin Royal</h3>
+                <p>Crown your culinary journey with an extraordinary dining experience where French cuisine is
+                    celebrated in a lavish banquet of unparalleled opulence.</p>
+                <a href="B_content.html" class="E_btn">More Info ⓘ</a>
+            </div>
+            <div class="E_card">
+                <img src="images/E_OMAKASE.jpg">
+                <div class="E_card-content"></div>
+                <h3>Hachi Omakase</h3>
+                <p>Gather with family and friends where the warmth of hospitality and the artistry of Japanese cuisine
+                    come together to create a plethora of unforgettable moments.</p>
+                <a href="B_content.html" class="E_btn">More Info ⓘ</a>
+            </div>
+        </div>
+        <a href="B_content.html" id="E_seemore"> → See More and Book Now </a>
+    </fieldset>
+    <fieldset class="E_contact">
+        <p class="E_contact-info">We can arrange virtually anything.</p>
+        <a href="K_contact.html" class="E_contactbtn">CONTACT</a>
+    </fieldset>
+    <h3 class="E_ent-text">Entertainment</h3>
+    <h3 class="E_line2">￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣</h3>
+    <div class="E_slider">
+        <div class="E_list">
+            <div class="E_item">
+                <img src="images/E_listen.png" alt="">
+
+            </div>
+            <div class="E_item">
+                <img src="images/E_cinemne.jpg" alt="">
+
+            </div>
+            <div class="E_item">
+                <img src="images/E_casino.jpg" alt="">
+
+            </div>
+            <div class="E_item">
+                <img src="images/E_pool.jpg" alt="">
+            </div>
+            <div class="E_item">
+                <img src="images/E_arcade.jpg" alt="">
+            </div>
+        </div>
+        <div class="E_activity">
+            <a class="E_actin" href="J_activity.html">Search More 🔍︎</a>
+        </div>
+        <div class="E_buttons">
+            <button id="E_prev"><bold><</bold></button>
+            <button id="E_next"><bold>></bold></button>
+        </div>
+        <ul class="E_dots">
+            <li class="E_active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script>
+        let slider = document.querySelector('.E_slider .E_list');
+        let items = document.querySelectorAll('.E_slider .E_list .E_item');
+        let next = document.getElementById('E_next');
+        let prev = document.getElementById('E_prev');
+        let dots = document.querySelectorAll('.E_slider .E_dots li');
+
+        let lengthItems = items.length - 1;
+        let active = 0;
+        next.onclick = function () {
+            active = active + 1 <= lengthItems ? active + 1 : 0;
+            reloadSlider();
+        }
+        prev.onclick = function () {
+            active = active - 1 >= 0 ? active - 1 : lengthItems;
+            reloadSlider();
+        }
+        let refreshInterval = setInterval(() => { next.click() }, 3000);
+        function reloadSlider() {
+            slider.style.left = -items[active].offsetLeft + 'px';
+            // 
+            let last_active_dot = document.querySelector('.E_slider .E_dots li.E_active');
+            last_active_dot.classList.remove('E_active');
+            dots[active].classList.add('E_active');
+
+            clearInterval(refreshInterval);
+            refreshInterval = setInterval(() => { next.click() }, 3000);
+
+
+        }
+
+        dots.forEach((li, key) => {
+            li.addEventListener('click', () => {
+                active = key;
+                reloadSlider();
+            })
+        })
+        window.onresize = function (event) {
+            reloadSlider();
+        };
+
+    </script>
+    <div>
+        <p class="E_cool-logo">◈◆◈◆◈◆◈◆◈</p>
+        <h2 class="E_motto"><u>Exceeding</u> Expectations, One <u>Comfort</u> at a Time</h2>
+        <p claSS="E_motto-content">We believe in going above and beyond to ensure that every guest feels welcomed,
+            valued, and pampered throughout their stay. From our luxurious facilities to our attentive staff, we strive
+            to create an atmosphere of unparalleled comfort and satisfaction. Each interaction with our guests is an
+            opportunity to surpass their expectations, leaving them with memories of exceptional service that linger
+            long after they depart. Welcome to a world where every comfort is carefully curated, and every need is
+            effortlessly met.</p>
+    </div>
+    <br>
+    <br>
+    <h3 class="E_lif-text">Lifestyle</h3>
+    <h3 class="E_line3">￣￣￣￣￣￣￣￣￣</h3>
+    <section>
+        <fieldset class="E_background-container">
+            <div class="E_gym">
+                <img src="images/E_gym.jpg">
+            </div>
+            <div class="E_lif-title">
+                <h3>LuxeFit Gym</h3>
+                <p>Welcome to LuxeFit Gym, where luxury and fitness converge to create an
+                    unparalleled experience
+                    for discerning guests. As a guest, you'll gain access to a world of fitness excellence,
+                    characterized by top-of-the-line equipment, bespoke training sessions, and an array of premium
+                    amenities. Our expert trainers are dedicated to helping you achieve your fitness goals, guiding
+                    you every step of the way towards peak performance.
+                </p>
+                <a href="E_form.html" class="E_gym-book">BOOK NOW</a>
+            </div>
+        </fieldset>
+        <fieldset class="E_background-container2">
+            <div class="E_spa">
+                <img src="images/E_spa.webp">
+            </div>
+            <div class="E_lif-title2">
+                <h3>Solstice Spa</h3>
+                <p>Indulge in a bespoke selection of world-class treatments and therapies tailored to your specific
+                    needs, administered by
+                    highly skilled therapists who are dedicated to ensuring your utmost comfort and satisfaction. From
+                    rejuvenating massages
+                    and invigorating facials to indulgent body wraps and holistic wellness rituals, each experience is
+                    designed to transport
+                    you to a state of blissful tranquility and inner harmony.</p>
+                <a href="E_form.html" class="E_spa-book">BOOK NOW</a>
+            </div>
+
+        </fieldset>
+        <fieldset class="E_background-container">
+            <div class="E_ball">
+                <img src="images/E_ballroom.jpg">
+            </div>
+            <div class="E_lif-title3">
+                <h3>Lumina Ball</h3>
+                <p>Nestled within the heart of downtown, Lumina Ball is a captivating blend of
+                    modern elegance and timeless sophistication. Step into a space bathed in soft, ambient lighting,
+                    where every detail exudes refined luxury. The contemporary decor, with its clean lines and chic
+                    accents, sets the stage for unforgettable events.
+                </p>
+                <a href="E_form.html" class="E_ball-book">BOOK NOW</a>
+            </div>
+        </fieldset>
+        <fieldset class="E_background-container2">
+            <div class="E_meeting">
+                <img src="images/e_meeting.webp">
+            </div>
+            <div class="E_lif-title4">
+                <h3>Executive Lounge</h3>
+                <p> Who says that you can'tinterconnect business with vacations? There is always room
+                    for business when it comes to us! This dynamic space is designed to inspire forward-thinking
+                    ideas and breakthrough innovations. It provides the perfect setting for brainstorming sessions,
+                    product development meetings, and strategic planning sessions. From whiteboard walls to interactive
+                    displays, every element of this room is tailored to fuel creativity and drive innovation.
+                </p>
+                <a href="E_form.html" class="E_spa-book">BOOK NOW</a>
+            </div>
+        </fieldset>
+        <fieldset class="E_background-container">
+            <div class="E_swim">
+                <img src="images/E_swimpool.jpg">
+            </div>
+            <div class="E_lif-title5">
+                <h3>Azure Crest</h3>
+                <p>What a way to refresh yourself after a hot summers day! The Azure Crest is open
+                    for visitors anytime. Whether you're seeking a rejuvenating swim, a peaceful retreat,
+                    or simply a moment of relaxation in a cozt natural setting, We invite you to immerse
+                    yourself in the beauty and serenity of its waters, where every moment is a treasure to be cherished.
+                </p>
+                <a href="E_form.html" class="E_ball-book">BOOK NOW</a>
+        </fieldset>
+    </section>
+    <div class="K_spacer K_layer6"></div>
+    <section>
+        <footer class="K_footer">
+          <div class="container">
+            <div class="K_footer-row">
+              <div class="K_footer-col">
+                <h4>Content Pages</h4>
+                <ul>
+                  <li><a href="K_Landing.html">Home</a></li>
+                  <li><a href="B_content.html">Dining Option</a></li>
+                  <li><a href="EV_roomInfo.html">Rooms Catalogue</a></li>
+                  <li><a href="E_book.html">Recreation choices</a></li>
+                  <li><a href="J_activity.html">Facilities Information</a></li>
+                </ul>
+              </div>
+              <div class="K_footer-col">
+                <h4>Forms</h4>
+                <ul>
+                  <li><a href="K_contact.html">Contact Us</a></li>
+                  <li><a href="E_form.html">Facilities Booking</a></li>
+                  <li><a href="J_form.html">Activities Booking</a></li>
+                  <li><a href="B_form.html">Restaurant Reservation</a></li>
+                </ul>
+              </div>
+              <div class="K_footer-col">
+                <h4>Coming Soon</h4>
+                <ul>
+                  <li><a href="#">Socials</a></li>
+                  <li><a href="#">Promotions</a></li>
+                  <li><a href="#">Updates/Announcements</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+</body>
+
+</html>

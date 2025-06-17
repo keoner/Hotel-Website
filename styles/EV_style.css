@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.EV_body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.EV_header {
+  font-family: "Cormorant Garamond";
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.EV_main {
+  padding: 40px;
+}
+
+.EV_room-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.EV_room-card {
+  overflow: auto;
+  background-color: rgb(171,182,178, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.EV_room-card h5, h3, h2 {
+  font-family: "Gilda Display";
+}
+
+.EV_room-card p {
+  font-family: "Lato";
+}
+
+.EV_room-card div div a {
+  font-family: "Gilda Display";
+}
+
+.EV_room-card div div ul li {
+  font-family: "Lato";
+}
+
+.EV_amenities {
+  font-family: "Lato";
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 3% 0;
+}
+
+.EV_amenities li{
+  text-align: center;
+}
+
+.EV_room-card img {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.EV_room-card .EV_infoimg{
+  height:30%;
+  width:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.EV_navButton {
+  font-family: "Gilda Display";
+  text-decoration: none;
+  background-color: #011536 !important;
+}
+
+.EV_banner-container {
+  font-family: "Gilda Display";
+  position: relative;
+  width: 100vw;
+}
+
+.EV_banner-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.EV_form-container {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 93%;
+  background-color: rgb(1,21,54, 0.9);
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.EV_fieldset {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.EV_input-group {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.EV_check-in-out {
+  width: 100%;
+  line-height: 2;
+  margin-bottom: 1%;
+  box-sizing: border-box;
+}
+
+.EV_submit {
+  width: 100%;
+  padding: 0.9%;
+  box-sizing: border-box;
+}
+
+#EV_box {
+  visibility: hidden;
+}
+
+.EV_fineT {
+  font-size: 75%;
+}
+
+ul {
+  list-style-type: none;
+}

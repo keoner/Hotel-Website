@@ -1,0 +1,163 @@
+.navbar {
+  background-color: #011536;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  z-index:2
+}
+
+.navbar-menu li {
+  margin-right: 18px;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+nav img{
+  width:80px;
+  height:auto
+}
+
+label.K_logo{
+  color:white;
+  font-size:2em;
+  line-height: 70px;
+  padding: 0 40px;
+  font-family:"Cormorant Garamond";
+}
+
+.navbar-menu li a:hover {
+  color: #abb6b2;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #011536;
+    padding: 10px;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+  .K_footer-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .K_footer-container{
+      max-width: 1170px;
+  }
+  
+  .K_footer {
+    background-color: #011536;
+    padding: 50px 0 40px 0;
+  }
+  
+  .K_footer-col {
+    width: 33%;
+    padding: 0 15px;
+  }
+  
+  .K_footer-col h4 {
+    font-size: 1.5em;
+    color: #fff;
+    font-family:"Gilda Display";
+    font-weight:600;
+    font-style:italic;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .K_footer-col h4::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    background-color: #FFF;
+    height: 2.5px;
+    width: 50px;
+  }
+  
+  .K_footer-col ul {
+    padding-left: 8px;
+  }
+  
+  .K_footer-col ul li {
+    margin-bottom: 10px;
+    list-style-type:none;
+  }
+  
+  .K_footer-col ul li:hover{
+    color:#fff;
+    transform:scale(0.95);
+    transition: 0.2s;
+  }
+  
+  .K_footer-col ul li a {
+    font-size: 16px;
+    font-family:Lato;
+    text-decoration: none;
+    color: #bbb;
+  }
+  
+  @media(max-width: 767px) {
+    .K_footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media(max-width: 574px) {
+    .K_footer-col {
+      width: 100%;
+    }
+  }
+
+  .K_spacer{
+    aspect-ratio:5;
+    width:100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+  }
+
+  .K_layer1{
+    background-image: url("../images/K_footer-layer.svg");
+  }
