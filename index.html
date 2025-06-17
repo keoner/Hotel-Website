@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="creator" content="Keoni" />
+  <title>Home | Azure Palms Retreat</title>
+  <!-- my icon -->
+  <link rel="icon" type="image/x-icon" href="images/K_logo.png" />
+  <!-- G fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gilda+Display&display=swap"
+    rel="stylesheet">
+  <!-- css link -->
+  <link href="styles/K_style.css" rel="stylesheet" />
+  <link href="styles/Global.css" rel="stylesheet" />
+  <!--Import Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+  <style>
+    img {
+      border-radius: 12px;
+      box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+  <div id="content">
+    <header>
+      <nav class="navbar">
+        <label class="K_logo"><img src="images/K_logo.png">A.P.R</label>
+        <div class="navbar-toggle" id="navbarToggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="navbar-menu" id="menuItems">
+          <li><a href="K_Landing.html">Home</a></li>
+          <li><a href="EV_roomInfo.html">Rooms</a></li>
+          <li><a href="B_content.html">Dining</a></li>
+          <li><a href="J_activity.html">Activities</a></li>
+          <li><a href="E_book.html">Facilities</a></li>
+          <li><a href="K_contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="K_container">
+        <div class="K_hero-content">
+          <video autoplay loop muted class="K_video-background">
+            <source src="images/K_hero-video.mp4" type="video/mp4" />
+          </video>
+          <h1>Welcome to Azure Palm Retreats</h1>
+          <h3>Enjoy a wonderful stay</h3>
+        </div>
+      </div>
+    </section>
+    <section class="K_about-section">
+      <div class="K_row">
+        <div class="K_left">
+          <img src="images/K_about.jpg" />
+        </div>
+        <div class="K_right">
+          <div class="K_about-content">
+            <p class="K_about-p">
+              Escape to paradise at Azure Palm Retreats, a hidden gem located on a remote island. We offer an
+              unparalleled experience of tranquility and luxury, surrounded by pristine beaches and lush landscapes. Our
+              commitment to exceptional hospitality and personalized service ensures that every guest enjoys a memorable
+              stay.
+            </p>
+            <p class="K_about-p">
+              Nestled on a secluded island, Azure Palm Retreats is a haven for those seeking a unique and unforgettable
+              escape. Far from the hustle and bustle of city life, our hotel offers a peaceful and serene environment
+              where guests can unwind and rejuvenate. Come and discover the magic of Azure Palm Retreats, where your
+              dream island getaway becomes a reality.
+            </p>
+            <a href="EV_roomInfo.html" class="K_cbtn" style="--bg: #011536;">Book now!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="K_spacer K_layer2"></div>
+    <section id="K_scrooolling">
+      <div class="K_page-header">
+        <h1>Accommodation</h1>
+      </div>
+      <div class="K_tab">
+        <button class="K_tablinks" onclick="getRoom(event, '1')" id="K_defaultOpen">View All</button>
+        <button class="K_tablinks" onclick="getRoom(event, '2')">Regular</button>
+        <button class="K_tablinks" onclick="getRoom(event, '3')">Deluxe</button>
+        <button class="K_tablinks" onclick="getRoom(event, '4')">Premium</button>
+      </div>
+      <!-- Tab content -->
+      <div id="1" class="K_tabcontent">
+        <section id="K_scrolling">
+          <div class="K_media-scroller snaps-inline">
+            <div class="K_media-element">
+              <img src="images/K_12.jpg" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn K_clear">Opulent Azure Haven</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_11.jpg" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Diamond Crest Estate</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_10.jpg" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Platinum Horizon Villa</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_9.jpg" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Golden Sands Retreat</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_8.jpg" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Emerald Bay Haven</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_7.jpg" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Royal Oasis Estate</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_1.jpg" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Azure Dream Villa</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_5.jpg" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Sunset Bluff Retreat</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_2.jpg" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Serenity Cove Villa</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_4.jpg" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Meadowview Manor</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_3.jpg" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Tranquil Haven Estate</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_6.jpg" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Whispering Pines Retreat</a>
+            </div>
+        </section>
+      </div>
+      <div id="2" class="K_tabcontent">
+        <section id="K_scrolling">
+          <div class="K_media-scroller snaps-inline">
+            <div class="K_media-element">
+              <img src="images/K_5.jpg" loading="lazy" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Whispering Pines Retreat</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_6.jpg" loading="lazy" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Serenity Cove Villa</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_2.jpg" loading="lazy" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Tranquil Haven Estate</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_4.jpg" loading="lazy" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Meadowview Manor</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_3.jpg" loading="lazy" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Sunset Bluff Retreat</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="3" class="K_tabcontent K_scrollcolour">
+        <section id="K_scrolling">
+          <div class="K_media-scroller K_snaps-inline">
+            <div class="K_media-element">
+              <img src="images/K_1.jpg" loading="lazy" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Azure Dream Villa</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_7.jpg" loading="lazy" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Royal Oasis Estate</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_8.jpg" loading="lazy" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Emerald Bay Haven</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_9.jpg" loading="lazy" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Golden Sands Retreat</a>
+            </div>
+          </div>
+      </div>
+      <div id="4" class="K_tabcontent K_scrollcolour">
+        <section id="K_scrolling">
+          <div class="K_media-scroller K_snaps-inline">
+            <div class="K_media-element">
+              <img src="images/K_10.jpg" loading="lazy" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Platinum Horizon Villa</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_11.jpg" loading="lazy" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Diamond Crest Estate</a>
+            </div>
+            <div class="K_media-element">
+              <img src="images/K_12.jpg" loading="lazy" />
+              <a href="EV_roomInfo.html" class="K_media-text K_table-btn">Opulent Azure Haven</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <div class="K_spacer K_layer4"></div>
+    <section id="K_midgrid">
+      <div class="K_midgridLeft K_blueback">
+        <div class="K_grid-container">
+          <div class="K_grid-img"><img src="images/B_restaurant1.jfif"></div>
+          <div class="K_grid-img K_new-hidden"><img src="images/B_restaurant2.jfif"></div>
+        </div>
+      </div>
+      <!--Bottom segment-->
+      <div class="K_midgridRight K_blueback">
+        <h1 class="K_gridhead">Dining Options</h1>
+        <p class="K_gridtext">
+          Indulge in a variety of culinary delights at our on-site restaurants, where our talented chefs create
+          exquisite dishes using the freshest ingredients. Whether you're in the mood for a gourmet dining experience, a
+          casual meal, or a quick snack, we have something to satisfy every palate.
+          <br><br>
+          Start your day with a delicious breakfast buffet featuring a wide selection of hot and cold items. For lunch
+          and dinner, explore our diverse menu that includes local specialties, international cuisine, and healthy
+          options. Don't forget to unwind with a cocktail or a glass of wine from our extensive beverage menu at our
+          cozy bar or lounge.
+          <br><br>
+          Our dining venues offer a range of atmospheres, from elegant and romantic settings to vibrant and
+          family-friendly environments. Join us and enjoy a memorable culinary journey during your stay.
+          <br><br>
+          <a href="B_content.html" class="K_cbtn" style="--bg: #011536;">Find out more!</a>
+          <br><br>
+        </p>
+      </div>
+    </section>
+    <div class="K_spacer K_layer5"></div>
+    <section id="K_facil">
+      <div class="K_page-header">
+        <h1>Facilities</h1>
+      </div>
+      <div class="K_product-container">
+        <table class="K_left-table">
+          <tr>
+            <td class="K_product-landscape">
+              <a href="E_book.html">
+                <img src="images/E_gym.jpg"></a>
+            </td>
+          </tr>
+          <tr>
+            <td class="K_facil-desc">
+              <h3>Indoors Gym</h3><a href="E_book.html" class="K_table-btn">Explore more</a>
+          </tr>
+        </table>
+
+        <table class="K_center-table">
+          <tr>
+            <td class="K_product-landscape">
+              <a href="E_book.html">
+                <img src="images/E_spa.webp"></a>
+            </td>
+          </tr>
+          <tr>
+            <td class="K_facil-desc">
+              <h3>Luxury Spa</h3><a href="E_book.html" class="K_table-btn">Explore more</a>
+            </td>
+          </tr>
+        </table>
+
+        <table class="K_right-table">
+          <tr>
+            <td class="K_product-landscape">
+              <a href="E_book.html">
+                <img src="images/E_ballroom.jpg"></a>
+            </td>
+          </tr>
+          <tr>
+            <td class="K_facil-desc">
+              <h3>Ballroom</h3><a href="E_book.html" class="K_table-btn">Explore more</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <div class="K_spacer K_layer3"></div>
+    <section class="K_about-section">
+      <div class="K_row">
+        <div class="K_left">
+          <img src="images/K_about.jpg" />
+        </div>
+        <div class="K_right">
+          <div class="K_about-content">
+            <p class="K_about-p">
+              At Azure Palm Retreats, we strive to provide an exceptional experience tailored to your needs. Whether
+              you're looking for information about our amenities, room options, or special packages, we have all the
+              details you need.
+            </p>
+            <p class="K_about-p">
+              We're here to help make your stay as comfortable and enjoyable as possible. For any inquiries or special
+              requests, don't hesitate to get in touch with us. Visit our Contact Page to reach out, and our friendly
+              staff will be happy to assist you.
+            </p>
+            <a href="K_contact.html" class="K_cbtn" style="--bg: #011536;">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="K_end-image-container">
+        <div class="K_end-image-wrapper">
+          <div class="K_end-image-cover">
+            <img src="images/K_dark.jpg" />
+          </div>
+          <a href="B_content.html">
+            <div class="K_end-image-text">
+              <h1>Restaurants</h1>
+              <p>Savor the flavors of our island paradise with our diverse culinary offerings. From gourmet cuisine to
+                local specialties, our dining options promise a delightful culinary journey. Explore our menus now.</p>
+              <h5>Find out more!</h5>
+            </div>
+          </a>
+        </div>
+        <div class="K_end-image-wrapper">
+          <div class="K_end-image-cover">
+            <img src="images/K_dark2.jpg" />
+          </div>
+
+          <a href="E_book.html">
+            <div class="K_end-image-text">
+              <h1>Facilities</h1>
+              <p>From our stunning beachfront to our rejuvenating spa, there's something for everyone at our secluded
+                island retreat. Learn more about our premier facilities.</p>
+              <h5>Find out more!</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="K_spacer K_layer1"></div>
+      <footer class="K_footer">
+        <div class="container">
+          <div class="K_footer-row">
+            <div class="K_footer-col">
+              <h4>Content Pages</h4>
+              <ul>
+                <li><a href="K_Landing.html">Home</a></li>
+                <li><a href="B_content.html">Dining Option</a></li>
+                <li><a href="EV_roomInfo.html">Rooms Catalogue</a></li>
+                <li><a href="E_book.html">Recreation choices</a></li>
+                <li><a href="J_activity.html">Facilities Information</a></li>
+              </ul>
+            </div>
+            <div class="K_footer-col">
+              <h4>Forms</h4>
+              <ul>
+                <li><a href="K_contact.html">Contact Us</a></li>
+                <li><a href="E_form.html">Facilities Booking</a></li>
+                <li><a href="J_form.html">Activities Booking</a></li>
+                <li><a href="B_form.html">Restaurant Reservation</a></li>
+              </ul>
+            </div>
+            <div class="K_footer-col">
+              <h4>Coming Soon</h4>
+              <ul>
+                <li><a href="#">Socials</a></li>
+                <li><a href="#">Promotions</a></li>
+                <li><a href="#">Updates/Announcements</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </div>
+</body>
+<script>
+  function getRoom(event, typeID) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="K_tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("K_tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="K_tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("K_tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" K_active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(typeID).style.display = "block";
+    event.currentTarget.className += " K_active";
+  }
+  // Get the element with id="K_defaultOpen" and click on it
+  document.getElementById("K_defaultOpen").click();
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Initialising value of preloaderShown
+    var preloaderShown = sessionStorage.getItem('preloaderShown');
+    var preloader = document.getElementById('preloader');
+    var loader = document.getElementById('loader');
+    var content = document.getElementById('content');
+
+    function hidePreloader() {
+      preloader.classList.add('hidden');
+      loader.classList.add('hidden');
+      setTimeout(function () {
+        content.style.visibility = 'visible';
+      }), 1000;
+
+      setTimeout(function () {
+        preloader.style.display = 'none';
+      }, 1000);
+      // Setting the value of preloaderShown for future use
+      sessionStorage.setItem('preloaderShown', true);
+    }
+
+    if (preloaderShown !== 'true') { //if False
+      setTimeout(hidePreloader, 2000);
+    }
+    else {
+      preloader.style.display = 'none';
+      content.style.visibility = 'visible';
+    }
+  });
+</script>
+<script>
+  const toggleBtn = document.getElementById('navbarToggle');
+  const menuItems = document.getElementById('menuItems');
+
+  toggleBtn.addEventListener('click', () => {
+    menuItems.classList.toggle('active');
+  });
+</script>
+</body>
+
+</html>
